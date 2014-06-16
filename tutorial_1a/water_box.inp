@@ -1,0 +1,9 @@
+tolerance 2.80 
+output water_box.pdb
+filetype pdb
+add_amber_ter
+
+structure water.pdb
+  number 768 
+  inside cube 0. 0. 0. 28.4 
+end structure

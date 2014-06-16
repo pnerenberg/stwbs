@@ -1,0 +1,1016 @@
+
+     ######################################################################
+   ##########################################################################
+  ###                                                                      ###
+ ###            TINKER  ---  Software Tools for Molecular Design            ###
+ ##                                                                          ##
+ ##                          Version 7.0  June 2014                          ##
+ ##                                                                          ##
+ ##               Copyright (c)  Jay William Ponder  1990-2014               ##
+ ###                           All Rights Reserved                          ###
+  ###                                                                      ###
+   ##########################################################################
+     ######################################################################
+
+
+ Molecular Dynamics Trajectory via Velocity Verlet Algorithm
+
+ Average Values for the Last   100 Out of      100 Dynamics Steps
+
+ Simulation Time              0.1000 Picosecond
+ Total Energy             -4462.4669 Kcal/mole   (+/- 149.5013)
+ Potential Energy         -5406.7396 Kcal/mole   (+/- 169.7471)
+ Kinetic Energy             944.2727 Kcal/mole   (+/- 101.7468)
+ Temperature                  187.34 Kelvin      (+/-    20.19)
+ Pressure                    -365.79 Atmosphere  (+/-  4091.06)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       100 Dynamics Steps
+
+ Current Time                 0.1000 Picosecond
+ Current Potential        -5215.6468 Kcal/mole
+ Current Kinetic           1009.5345 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      1
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of      200 Dynamics Steps
+
+ Simulation Time              0.2000 Picosecond
+ Total Energy             -3974.9762 Kcal/mole   (+/- 124.7549)
+ Potential Energy         -5102.6031 Kcal/mole   (+/-  64.7638)
+ Kinetic Energy            1127.6269 Kcal/mole   (+/-  70.3480)
+ Temperature                  223.71 Kelvin      (+/-    13.96)
+ Pressure                   -1522.49 Atmosphere  (+/-  4190.90)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       200 Dynamics Steps
+
+ Current Time                 0.2000 Picosecond
+ Current Potential        -4989.6798 Kcal/mole
+ Current Kinetic           1189.8941 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      2
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of      300 Dynamics Steps
+
+ Simulation Time              0.3000 Picosecond
+ Total Energy             -3631.0742 Kcal/mole   (+/-  80.3755)
+ Potential Energy         -4940.9092 Kcal/mole   (+/-  49.1119)
+ Kinetic Energy            1309.8350 Kcal/mole   (+/-  41.8534)
+ Temperature                  259.86 Kelvin      (+/-     8.30)
+ Pressure                   -1375.29 Atmosphere  (+/-  2152.82)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       300 Dynamics Steps
+
+ Current Time                 0.3000 Picosecond
+ Current Potential        -4895.8914 Kcal/mole
+ Current Kinetic           1393.5249 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      3
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of      400 Dynamics Steps
+
+ Simulation Time              0.4000 Picosecond
+ Total Energy             -3428.7185 Kcal/mole   (+/-  42.7979)
+ Potential Energy         -4825.3847 Kcal/mole   (+/-  32.1830)
+ Kinetic Energy            1396.6662 Kcal/mole   (+/-  22.1322)
+ Temperature                  277.09 Kelvin      (+/-     4.39)
+ Pressure                   -1025.25 Atmosphere  (+/-  1179.19)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       400 Dynamics Steps
+
+ Current Time                 0.4000 Picosecond
+ Current Potential        -4796.1018 Kcal/mole
+ Current Kinetic           1415.7641 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      4
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of      500 Dynamics Steps
+
+ Simulation Time              0.5000 Picosecond
+ Total Energy             -3356.5048 Kcal/mole   (+/-  17.7594)
+ Potential Energy         -4790.9231 Kcal/mole   (+/-  16.7998)
+ Kinetic Energy            1434.4183 Kcal/mole   (+/-  19.0454)
+ Temperature                  284.58 Kelvin      (+/-     3.78)
+ Pressure                   -1304.66 Atmosphere  (+/-   807.30)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       500 Dynamics Steps
+
+ Current Time                 0.5000 Picosecond
+ Current Potential        -4764.4788 Kcal/mole
+ Current Kinetic           1451.7416 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      5
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of      600 Dynamics Steps
+
+ Simulation Time              0.6000 Picosecond
+ Total Energy             -3314.9738 Kcal/mole   (+/-  11.6923)
+ Potential Energy         -4754.5536 Kcal/mole   (+/-  26.7451)
+ Kinetic Energy            1439.5799 Kcal/mole   (+/-  25.2144)
+ Temperature                  285.60 Kelvin      (+/-     5.00)
+ Pressure                   -2255.28 Atmosphere  (+/-   632.29)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       600 Dynamics Steps
+
+ Current Time                 0.6000 Picosecond
+ Current Potential        -4776.2308 Kcal/mole
+ Current Kinetic           1460.1884 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      6
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of      700 Dynamics Steps
+
+ Simulation Time              0.7000 Picosecond
+ Total Energy             -3317.4344 Kcal/mole   (+/-   8.9463)
+ Potential Energy         -4746.2968 Kcal/mole   (+/-  22.7687)
+ Kinetic Energy            1428.8625 Kcal/mole   (+/-  22.9812)
+ Temperature                  283.47 Kelvin      (+/-     4.56)
+ Pressure                   -2386.76 Atmosphere  (+/-   737.83)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       700 Dynamics Steps
+
+ Current Time                 0.7000 Picosecond
+ Current Potential        -4747.0322 Kcal/mole
+ Current Kinetic           1440.5673 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      7
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of      800 Dynamics Steps
+
+ Simulation Time              0.8000 Picosecond
+ Total Energy             -3241.8852 Kcal/mole   (+/-  32.3560)
+ Potential Energy         -4718.8429 Kcal/mole   (+/-  21.6503)
+ Kinetic Energy            1476.9577 Kcal/mole   (+/-  20.5162)
+ Temperature                  293.02 Kelvin      (+/-     4.07)
+ Pressure                   -1871.02 Atmosphere  (+/-   878.10)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       800 Dynamics Steps
+
+ Current Time                 0.8000 Picosecond
+ Current Potential        -4701.8846 Kcal/mole
+ Current Kinetic           1493.4636 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      8
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of      900 Dynamics Steps
+
+ Simulation Time              0.9000 Picosecond
+ Total Energy             -3211.1869 Kcal/mole   (+/-  10.8714)
+ Potential Energy         -4711.3388 Kcal/mole   (+/-  17.9754)
+ Kinetic Energy            1500.1519 Kcal/mole   (+/-  16.4006)
+ Temperature                  297.62 Kelvin      (+/-     3.25)
+ Pressure                   -1755.57 Atmosphere  (+/-   597.74)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at       900 Dynamics Steps
+
+ Current Time                 0.9000 Picosecond
+ Current Potential        -4707.3050 Kcal/mole
+ Current Kinetic           1506.1547 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                      9
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1000 Dynamics Steps
+
+ Simulation Time              1.0000 Picosecond
+ Total Energy             -3201.0067 Kcal/mole   (+/-  14.5377)
+ Potential Energy         -4680.8428 Kcal/mole   (+/-  27.5923)
+ Kinetic Energy            1479.8361 Kcal/mole   (+/-  20.1011)
+ Temperature                  293.59 Kelvin      (+/-     3.99)
+ Pressure                   -1982.59 Atmosphere  (+/-   253.31)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1000 Dynamics Steps
+
+ Current Time                 1.0000 Picosecond
+ Current Potential        -4651.9715 Kcal/mole
+ Current Kinetic           1442.4993 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     10
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1100 Dynamics Steps
+
+ Simulation Time              1.1000 Picosecond
+ Total Energy             -3177.8170 Kcal/mole   (+/-  15.3481)
+ Potential Energy         -4674.4221 Kcal/mole   (+/-  21.7072)
+ Kinetic Energy            1496.6051 Kcal/mole   (+/-  31.4284)
+ Temperature                  296.91 Kelvin      (+/-     6.24)
+ Pressure                   -1499.31 Atmosphere  (+/-   639.05)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1100 Dynamics Steps
+
+ Current Time                 1.1000 Picosecond
+ Current Potential        -4652.8901 Kcal/mole
+ Current Kinetic           1496.6705 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     11
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1200 Dynamics Steps
+
+ Simulation Time              1.2000 Picosecond
+ Total Energy             -3173.9363 Kcal/mole   (+/-   9.5690)
+ Potential Energy         -4678.6525 Kcal/mole   (+/-  14.3441)
+ Kinetic Energy            1504.7162 Kcal/mole   (+/-  13.7711)
+ Temperature                  298.52 Kelvin      (+/-     2.73)
+ Pressure                   -1896.29 Atmosphere  (+/-   973.21)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1200 Dynamics Steps
+
+ Current Time                 1.2000 Picosecond
+ Current Potential        -4673.0862 Kcal/mole
+ Current Kinetic           1468.2344 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     12
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1300 Dynamics Steps
+
+ Simulation Time              1.3000 Picosecond
+ Total Energy             -3221.4298 Kcal/mole   (+/-   9.8291)
+ Potential Energy         -4723.7000 Kcal/mole   (+/-  21.0363)
+ Kinetic Energy            1502.2703 Kcal/mole   (+/-  22.1801)
+ Temperature                  298.04 Kelvin      (+/-     4.40)
+ Pressure                   -1674.53 Atmosphere  (+/-  1157.62)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1300 Dynamics Steps
+
+ Current Time                 1.3000 Picosecond
+ Current Potential        -4754.5848 Kcal/mole
+ Current Kinetic           1510.9525 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     13
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1400 Dynamics Steps
+
+ Simulation Time              1.4000 Picosecond
+ Total Energy             -3274.4495 Kcal/mole   (+/-  24.6374)
+ Potential Energy         -4773.2594 Kcal/mole   (+/-  22.8649)
+ Kinetic Energy            1498.8099 Kcal/mole   (+/-  24.9750)
+ Temperature                  297.35 Kelvin      (+/-     4.95)
+ Pressure                   -1101.31 Atmosphere  (+/-   697.64)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1400 Dynamics Steps
+
+ Current Time                 1.4000 Picosecond
+ Current Potential        -4804.3054 Kcal/mole
+ Current Kinetic           1495.6586 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     14
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1500 Dynamics Steps
+
+ Simulation Time              1.5000 Picosecond
+ Total Energy             -3269.6940 Kcal/mole   (+/-  12.6172)
+ Potential Energy         -4773.7599 Kcal/mole   (+/-  24.0110)
+ Kinetic Energy            1504.0659 Kcal/mole   (+/-  23.0341)
+ Temperature                  298.39 Kelvin      (+/-     4.57)
+ Pressure                   -1374.50 Atmosphere  (+/-   836.92)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1500 Dynamics Steps
+
+ Current Time                 1.5000 Picosecond
+ Current Potential        -4806.2972 Kcal/mole
+ Current Kinetic           1530.2310 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     15
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1600 Dynamics Steps
+
+ Simulation Time              1.6000 Picosecond
+ Total Energy             -3312.2838 Kcal/mole   (+/-  16.0387)
+ Potential Energy         -4781.5576 Kcal/mole   (+/-  17.1904)
+ Kinetic Energy            1469.2738 Kcal/mole   (+/-  19.4412)
+ Temperature                  291.49 Kelvin      (+/-     3.86)
+ Pressure                   -1908.89 Atmosphere  (+/-   675.15)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1600 Dynamics Steps
+
+ Current Time                 1.6000 Picosecond
+ Current Potential        -4798.6874 Kcal/mole
+ Current Kinetic           1480.9114 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     16
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1700 Dynamics Steps
+
+ Simulation Time              1.7000 Picosecond
+ Total Energy             -3292.1692 Kcal/mole   (+/-   9.5951)
+ Potential Energy         -4776.0064 Kcal/mole   (+/-  21.1552)
+ Kinetic Energy            1483.8372 Kcal/mole   (+/-  17.9897)
+ Temperature                  294.38 Kelvin      (+/-     3.57)
+ Pressure                   -2070.24 Atmosphere  (+/-   937.02)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1700 Dynamics Steps
+
+ Current Time                 1.7000 Picosecond
+ Current Potential        -4754.0125 Kcal/mole
+ Current Kinetic           1459.1891 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     17
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1800 Dynamics Steps
+
+ Simulation Time              1.8000 Picosecond
+ Total Energy             -3266.3484 Kcal/mole   (+/-  20.5320)
+ Potential Energy         -4756.4690 Kcal/mole   (+/-  23.0890)
+ Kinetic Energy            1490.1206 Kcal/mole   (+/-  22.1209)
+ Temperature                  295.63 Kelvin      (+/-     4.39)
+ Pressure                   -2195.74 Atmosphere  (+/-  1072.28)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1800 Dynamics Steps
+
+ Current Time                 1.8000 Picosecond
+ Current Potential        -4752.8117 Kcal/mole
+ Current Kinetic           1510.0873 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     18
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     1900 Dynamics Steps
+
+ Simulation Time              1.9000 Picosecond
+ Total Energy             -3224.8583 Kcal/mole   (+/-  18.4256)
+ Potential Energy         -4740.0439 Kcal/mole   (+/-  22.5158)
+ Kinetic Energy            1515.1855 Kcal/mole   (+/-  21.5962)
+ Temperature                  300.60 Kelvin      (+/-     4.28)
+ Pressure                   -1984.06 Atmosphere  (+/-   909.79)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      1900 Dynamics Steps
+
+ Current Time                 1.9000 Picosecond
+ Current Potential        -4754.8211 Kcal/mole
+ Current Kinetic           1503.9300 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     19
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2000 Dynamics Steps
+
+ Simulation Time              2.0000 Picosecond
+ Total Energy             -3224.2613 Kcal/mole   (+/-  20.1791)
+ Potential Energy         -4724.0838 Kcal/mole   (+/-  20.0773)
+ Kinetic Energy            1499.8226 Kcal/mole   (+/-  19.4833)
+ Temperature                  297.55 Kelvin      (+/-     3.87)
+ Pressure                   -1845.86 Atmosphere  (+/-   507.36)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2000 Dynamics Steps
+
+ Current Time                 2.0000 Picosecond
+ Current Potential        -4705.0434 Kcal/mole
+ Current Kinetic           1503.7468 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     20
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2100 Dynamics Steps
+
+ Simulation Time              2.1000 Picosecond
+ Total Energy             -3190.7409 Kcal/mole   (+/-  11.4512)
+ Potential Energy         -4696.6513 Kcal/mole   (+/-  22.2271)
+ Kinetic Energy            1505.9104 Kcal/mole   (+/-  21.3731)
+ Temperature                  298.76 Kelvin      (+/-     4.24)
+ Pressure                   -1765.91 Atmosphere  (+/-  1135.52)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2100 Dynamics Steps
+
+ Current Time                 2.1000 Picosecond
+ Current Potential        -4724.8061 Kcal/mole
+ Current Kinetic           1554.0579 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     21
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2200 Dynamics Steps
+
+ Simulation Time              2.2000 Picosecond
+ Total Energy             -3186.0356 Kcal/mole   (+/-  15.4401)
+ Potential Energy         -4719.0812 Kcal/mole   (+/-  21.9258)
+ Kinetic Energy            1533.0456 Kcal/mole   (+/-  32.0482)
+ Temperature                  304.14 Kelvin      (+/-     6.36)
+ Pressure                   -2123.65 Atmosphere  (+/-  1091.28)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2200 Dynamics Steps
+
+ Current Time                 2.2000 Picosecond
+ Current Potential        -4727.5320 Kcal/mole
+ Current Kinetic           1529.1652 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     22
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2300 Dynamics Steps
+
+ Simulation Time              2.3000 Picosecond
+ Total Energy             -3186.5874 Kcal/mole   (+/-  14.8459)
+ Potential Energy         -4721.2480 Kcal/mole   (+/-  14.6697)
+ Kinetic Energy            1534.6606 Kcal/mole   (+/-  14.9113)
+ Temperature                  304.46 Kelvin      (+/-     2.96)
+ Pressure                   -2339.58 Atmosphere  (+/-   532.42)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2300 Dynamics Steps
+
+ Current Time                 2.3000 Picosecond
+ Current Potential        -4746.4187 Kcal/mole
+ Current Kinetic           1538.2979 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     23
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2400 Dynamics Steps
+
+ Simulation Time              2.4000 Picosecond
+ Total Energy             -3223.5916 Kcal/mole   (+/-  11.7585)
+ Potential Energy         -4761.5932 Kcal/mole   (+/-  13.6809)
+ Kinetic Energy            1538.0016 Kcal/mole   (+/-  15.0678)
+ Temperature                  305.13 Kelvin      (+/-     2.99)
+ Pressure                   -2379.57 Atmosphere  (+/-   902.73)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2400 Dynamics Steps
+
+ Current Time                 2.4000 Picosecond
+ Current Potential        -4769.7506 Kcal/mole
+ Current Kinetic           1531.4834 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     24
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2500 Dynamics Steps
+
+ Simulation Time              2.5000 Picosecond
+ Total Energy             -3233.7579 Kcal/mole   (+/-  19.9176)
+ Potential Energy         -4765.8578 Kcal/mole   (+/-  26.7182)
+ Kinetic Energy            1532.0999 Kcal/mole   (+/-  21.6386)
+ Temperature                  303.96 Kelvin      (+/-     4.29)
+ Pressure                   -1406.52 Atmosphere  (+/-   861.95)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2500 Dynamics Steps
+
+ Current Time                 2.5000 Picosecond
+ Current Potential        -4741.7335 Kcal/mole
+ Current Kinetic           1539.2706 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     25
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2600 Dynamics Steps
+
+ Simulation Time              2.6000 Picosecond
+ Total Energy             -3221.5267 Kcal/mole   (+/-  20.2350)
+ Potential Energy         -4746.4370 Kcal/mole   (+/-  22.9990)
+ Kinetic Energy            1524.9103 Kcal/mole   (+/-  32.0378)
+ Temperature                  302.53 Kelvin      (+/-     6.36)
+ Pressure                   -1781.59 Atmosphere  (+/-  1440.99)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2600 Dynamics Steps
+
+ Current Time                 2.6000 Picosecond
+ Current Potential        -4766.0074 Kcal/mole
+ Current Kinetic           1503.8801 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     26
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2700 Dynamics Steps
+
+ Simulation Time              2.7000 Picosecond
+ Total Energy             -3259.9604 Kcal/mole   (+/-   9.3495)
+ Potential Energy         -4766.1942 Kcal/mole   (+/-  22.7995)
+ Kinetic Energy            1506.2338 Kcal/mole   (+/-  22.7552)
+ Temperature                  298.82 Kelvin      (+/-     4.51)
+ Pressure                   -1328.40 Atmosphere  (+/-  1431.86)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2700 Dynamics Steps
+
+ Current Time                 2.7000 Picosecond
+ Current Potential        -4779.3587 Kcal/mole
+ Current Kinetic           1509.0951 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     27
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2800 Dynamics Steps
+
+ Simulation Time              2.8000 Picosecond
+ Total Energy             -3333.9551 Kcal/mole   (+/-  30.8913)
+ Potential Energy         -4814.7542 Kcal/mole   (+/-  15.2023)
+ Kinetic Energy            1480.7991 Kcal/mole   (+/-  27.6812)
+ Temperature                  293.78 Kelvin      (+/-     5.49)
+ Pressure                   -1649.49 Atmosphere  (+/-   924.15)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2800 Dynamics Steps
+
+ Current Time                 2.8000 Picosecond
+ Current Potential        -4832.7192 Kcal/mole
+ Current Kinetic           1487.0192 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     28
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     2900 Dynamics Steps
+
+ Simulation Time              2.9000 Picosecond
+ Total Energy             -3347.4966 Kcal/mole   (+/-  10.2765)
+ Potential Energy         -4812.7507 Kcal/mole   (+/-  23.1785)
+ Kinetic Energy            1465.2541 Kcal/mole   (+/-  25.6309)
+ Temperature                  290.69 Kelvin      (+/-     5.08)
+ Pressure                   -1472.96 Atmosphere  (+/-  1568.28)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      2900 Dynamics Steps
+
+ Current Time                 2.9000 Picosecond
+ Current Potential        -4829.4356 Kcal/mole
+ Current Kinetic           1491.5194 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     29
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3000 Dynamics Steps
+
+ Simulation Time              3.0000 Picosecond
+ Total Energy             -3346.2682 Kcal/mole   (+/-  16.5151)
+ Potential Energy         -4820.7294 Kcal/mole   (+/-  22.0479)
+ Kinetic Energy            1474.4611 Kcal/mole   (+/-  18.2000)
+ Temperature                  292.52 Kelvin      (+/-     3.61)
+ Pressure                   -1664.18 Atmosphere  (+/-  1145.17)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3000 Dynamics Steps
+
+ Current Time                 3.0000 Picosecond
+ Current Potential        -4810.7518 Kcal/mole
+ Current Kinetic           1450.8160 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     30
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3100 Dynamics Steps
+
+ Simulation Time              3.1000 Picosecond
+ Total Energy             -3347.7751 Kcal/mole   (+/-  14.5321)
+ Potential Energy         -4818.9628 Kcal/mole   (+/-  23.4944)
+ Kinetic Energy            1471.1877 Kcal/mole   (+/-  18.3704)
+ Temperature                  291.87 Kelvin      (+/-     3.64)
+ Pressure                   -1865.27 Atmosphere  (+/-   954.64)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3100 Dynamics Steps
+
+ Current Time                 3.1000 Picosecond
+ Current Potential        -4823.5061 Kcal/mole
+ Current Kinetic           1490.2934 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     31
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3200 Dynamics Steps
+
+ Simulation Time              3.2000 Picosecond
+ Total Energy             -3322.8978 Kcal/mole   (+/-   8.5962)
+ Potential Energy         -4805.0891 Kcal/mole   (+/-  21.9474)
+ Kinetic Energy            1482.1912 Kcal/mole   (+/-  20.5906)
+ Temperature                  294.05 Kelvin      (+/-     4.08)
+ Pressure                   -1968.69 Atmosphere  (+/-   648.95)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3200 Dynamics Steps
+
+ Current Time                 3.2000 Picosecond
+ Current Potential        -4799.5830 Kcal/mole
+ Current Kinetic           1498.8230 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     32
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3300 Dynamics Steps
+
+ Simulation Time              3.3000 Picosecond
+ Total Energy             -3309.6158 Kcal/mole   (+/-  12.3245)
+ Potential Energy         -4813.1936 Kcal/mole   (+/-  27.2070)
+ Kinetic Energy            1503.5777 Kcal/mole   (+/-  24.6962)
+ Temperature                  298.30 Kelvin      (+/-     4.90)
+ Pressure                   -1481.58 Atmosphere  (+/-   872.80)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3300 Dynamics Steps
+
+ Current Time                 3.3000 Picosecond
+ Current Potential        -4826.2045 Kcal/mole
+ Current Kinetic           1528.8377 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     33
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3400 Dynamics Steps
+
+ Simulation Time              3.4000 Picosecond
+ Total Energy             -3273.2910 Kcal/mole   (+/-  13.1676)
+ Potential Energy         -4765.8907 Kcal/mole   (+/-  23.7084)
+ Kinetic Energy            1492.5996 Kcal/mole   (+/-  28.2310)
+ Temperature                  296.12 Kelvin      (+/-     5.60)
+ Pressure                   -1381.03 Atmosphere  (+/-  1102.55)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3400 Dynamics Steps
+
+ Current Time                 3.4000 Picosecond
+ Current Potential        -4754.1843 Kcal/mole
+ Current Kinetic           1503.2639 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     34
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3500 Dynamics Steps
+
+ Simulation Time              3.5000 Picosecond
+ Total Energy             -3275.3594 Kcal/mole   (+/-  15.5138)
+ Potential Energy         -4786.9939 Kcal/mole   (+/-  20.4182)
+ Kinetic Energy            1511.6345 Kcal/mole   (+/-  26.2069)
+ Temperature                  299.90 Kelvin      (+/-     5.20)
+ Pressure                   -1374.62 Atmosphere  (+/-   735.17)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3500 Dynamics Steps
+
+ Current Time                 3.5000 Picosecond
+ Current Potential        -4813.5250 Kcal/mole
+ Current Kinetic           1521.3171 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     35
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3600 Dynamics Steps
+
+ Simulation Time              3.6000 Picosecond
+ Total Energy             -3291.7008 Kcal/mole   (+/-  12.4697)
+ Potential Energy         -4787.3495 Kcal/mole   (+/-  19.4953)
+ Kinetic Energy            1495.6488 Kcal/mole   (+/-  23.9728)
+ Temperature                  296.72 Kelvin      (+/-     4.76)
+ Pressure                   -2074.87 Atmosphere  (+/-   680.75)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3600 Dynamics Steps
+
+ Current Time                 3.6000 Picosecond
+ Current Potential        -4762.8502 Kcal/mole
+ Current Kinetic           1469.3328 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     36
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3700 Dynamics Steps
+
+ Simulation Time              3.7000 Picosecond
+ Total Energy             -3276.8469 Kcal/mole   (+/-   9.1776)
+ Potential Energy         -4769.4194 Kcal/mole   (+/-  23.5017)
+ Kinetic Energy            1492.5725 Kcal/mole   (+/-  23.7205)
+ Temperature                  296.11 Kelvin      (+/-     4.71)
+ Pressure                   -2221.28 Atmosphere  (+/-   782.46)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3700 Dynamics Steps
+
+ Current Time                 3.7000 Picosecond
+ Current Potential        -4773.0203 Kcal/mole
+ Current Kinetic           1488.3121 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     37
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3800 Dynamics Steps
+
+ Simulation Time              3.8000 Picosecond
+ Total Energy             -3299.3277 Kcal/mole   (+/-  10.6270)
+ Potential Energy         -4788.6499 Kcal/mole   (+/-  20.8881)
+ Kinetic Energy            1489.3222 Kcal/mole   (+/-  19.8466)
+ Temperature                  295.47 Kelvin      (+/-     3.94)
+ Pressure                   -1876.16 Atmosphere  (+/-   626.89)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3800 Dynamics Steps
+
+ Current Time                 3.8000 Picosecond
+ Current Potential        -4817.6112 Kcal/mole
+ Current Kinetic           1500.7192 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     38
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     3900 Dynamics Steps
+
+ Simulation Time              3.9000 Picosecond
+ Total Energy             -3273.1692 Kcal/mole   (+/-  22.1633)
+ Potential Energy         -4776.6908 Kcal/mole   (+/-  24.5370)
+ Kinetic Energy            1503.5215 Kcal/mole   (+/-  16.9283)
+ Temperature                  298.29 Kelvin      (+/-     3.36)
+ Pressure                   -1688.31 Atmosphere  (+/-   436.39)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      3900 Dynamics Steps
+
+ Current Time                 3.9000 Picosecond
+ Current Potential        -4740.0635 Kcal/mole
+ Current Kinetic           1506.6396 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     39
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4000 Dynamics Steps
+
+ Simulation Time              4.0000 Picosecond
+ Total Energy             -3238.2805 Kcal/mole   (+/-  19.2953)
+ Potential Energy         -4744.7715 Kcal/mole   (+/-  22.7680)
+ Kinetic Energy            1506.4910 Kcal/mole   (+/-  24.0196)
+ Temperature                  298.87 Kelvin      (+/-     4.77)
+ Pressure                   -1274.67 Atmosphere  (+/-   358.05)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4000 Dynamics Steps
+
+ Current Time                 4.0000 Picosecond
+ Current Potential        -4761.0716 Kcal/mole
+ Current Kinetic           1503.4959 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     40
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4100 Dynamics Steps
+
+ Simulation Time              4.1000 Picosecond
+ Total Energy             -3261.6969 Kcal/mole   (+/-   9.0110)
+ Potential Energy         -4763.3203 Kcal/mole   (+/-  16.2584)
+ Kinetic Energy            1501.6235 Kcal/mole   (+/-  17.2798)
+ Temperature                  297.91 Kelvin      (+/-     3.43)
+ Pressure                    -766.15 Atmosphere  (+/-   766.69)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4100 Dynamics Steps
+
+ Current Time                 4.1000 Picosecond
+ Current Potential        -4784.7965 Kcal/mole
+ Current Kinetic           1517.9610 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     41
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4200 Dynamics Steps
+
+ Simulation Time              4.2000 Picosecond
+ Total Energy             -3278.8705 Kcal/mole   (+/-  10.0892)
+ Potential Energy         -4779.7034 Kcal/mole   (+/-  23.6728)
+ Kinetic Energy            1500.8329 Kcal/mole   (+/-  22.3151)
+ Temperature                  297.75 Kelvin      (+/-     4.43)
+ Pressure                   -1695.90 Atmosphere  (+/-   416.08)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4200 Dynamics Steps
+
+ Current Time                 4.2000 Picosecond
+ Current Potential        -4791.9591 Kcal/mole
+ Current Kinetic           1488.0988 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     42
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4300 Dynamics Steps
+
+ Simulation Time              4.3000 Picosecond
+ Total Energy             -3298.3003 Kcal/mole   (+/-  10.4114)
+ Potential Energy         -4820.0097 Kcal/mole   (+/-  24.5409)
+ Kinetic Energy            1521.7094 Kcal/mole   (+/-  28.2875)
+ Temperature                  301.89 Kelvin      (+/-     5.61)
+ Pressure                   -1902.78 Atmosphere  (+/-   520.63)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4300 Dynamics Steps
+
+ Current Time                 4.3000 Picosecond
+ Current Potential        -4807.6043 Kcal/mole
+ Current Kinetic           1493.3342 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     43
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4400 Dynamics Steps
+
+ Simulation Time              4.4000 Picosecond
+ Total Energy             -3311.3198 Kcal/mole   (+/-  15.3202)
+ Potential Energy         -4819.8160 Kcal/mole   (+/-  26.1221)
+ Kinetic Energy            1508.4962 Kcal/mole   (+/-  28.0008)
+ Temperature                  299.27 Kelvin      (+/-     5.56)
+ Pressure                   -1948.83 Atmosphere  (+/-   680.75)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4400 Dynamics Steps
+
+ Current Time                 4.4000 Picosecond
+ Current Potential        -4810.6206 Kcal/mole
+ Current Kinetic           1481.9145 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     44
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4500 Dynamics Steps
+
+ Simulation Time              4.5000 Picosecond
+ Total Energy             -3317.7614 Kcal/mole   (+/-  15.9808)
+ Potential Energy         -4799.8322 Kcal/mole   (+/-  24.3415)
+ Kinetic Energy            1482.0708 Kcal/mole   (+/-  26.1177)
+ Temperature                  294.03 Kelvin      (+/-     5.18)
+ Pressure                   -2003.46 Atmosphere  (+/-   492.66)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4500 Dynamics Steps
+
+ Current Time                 4.5000 Picosecond
+ Current Potential        -4809.6150 Kcal/mole
+ Current Kinetic           1476.7678 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     45
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4600 Dynamics Steps
+
+ Simulation Time              4.6000 Picosecond
+ Total Energy             -3343.7778 Kcal/mole   (+/-   7.4042)
+ Potential Energy         -4816.7280 Kcal/mole   (+/-  19.9836)
+ Kinetic Energy            1472.9502 Kcal/mole   (+/-  20.4010)
+ Temperature                  292.22 Kelvin      (+/-     4.05)
+ Pressure                   -1875.42 Atmosphere  (+/-  1066.87)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4600 Dynamics Steps
+
+ Current Time                 4.6000 Picosecond
+ Current Potential        -4847.9183 Kcal/mole
+ Current Kinetic           1509.4532 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     46
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4700 Dynamics Steps
+
+ Simulation Time              4.7000 Picosecond
+ Total Energy             -3322.3685 Kcal/mole   (+/-  10.7968)
+ Potential Energy         -4799.0520 Kcal/mole   (+/-  14.7014)
+ Kinetic Energy            1476.6835 Kcal/mole   (+/-  15.5032)
+ Temperature                  292.96 Kelvin      (+/-     3.08)
+ Pressure                   -1232.80 Atmosphere  (+/-  1242.98)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4700 Dynamics Steps
+
+ Current Time                 4.7000 Picosecond
+ Current Potential        -4793.4576 Kcal/mole
+ Current Kinetic           1480.7030 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     47
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4800 Dynamics Steps
+
+ Simulation Time              4.8000 Picosecond
+ Total Energy             -3330.5530 Kcal/mole   (+/-   8.6116)
+ Potential Energy         -4816.6378 Kcal/mole   (+/-  18.5637)
+ Kinetic Energy            1486.0849 Kcal/mole   (+/-  18.0329)
+ Temperature                  294.83 Kelvin      (+/-     3.58)
+ Pressure                   -1403.30 Atmosphere  (+/-  1262.77)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4800 Dynamics Steps
+
+ Current Time                 4.8000 Picosecond
+ Current Potential        -4815.8740 Kcal/mole
+ Current Kinetic           1483.9842 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     48
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     4900 Dynamics Steps
+
+ Simulation Time              4.9000 Picosecond
+ Total Energy             -3317.7816 Kcal/mole   (+/-  28.8451)
+ Potential Energy         -4799.8499 Kcal/mole   (+/-  18.1608)
+ Kinetic Energy            1482.0683 Kcal/mole   (+/-  30.0446)
+ Temperature                  294.03 Kelvin      (+/-     5.96)
+ Pressure                   -1245.48 Atmosphere  (+/-   553.72)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      4900 Dynamics Steps
+
+ Current Time                 4.9000 Picosecond
+ Current Potential        -4797.3117 Kcal/mole
+ Current Kinetic           1540.6769 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     49
+ Coordinate File            heat.arc
+
+ Average Values for the Last   100 Out of     5000 Dynamics Steps
+
+ Simulation Time              5.0000 Picosecond
+ Total Energy             -3304.4508 Kcal/mole   (+/-  22.8644)
+ Potential Energy         -4801.2863 Kcal/mole   (+/-  19.1654)
+ Kinetic Energy            1496.8355 Kcal/mole   (+/-  23.6923)
+ Temperature                  296.96 Kelvin      (+/-     4.70)
+ Pressure                   -1416.91 Atmosphere  (+/-   959.47)
+ Density                      0.8384 Grams/cc    (+/-   0.0000)
+
+ Instantaneous Values for Frame Saved at      5000 Dynamics Steps
+
+ Current Time                 5.0000 Picosecond
+ Current Potential        -4825.6186 Kcal/mole
+ Current Kinetic           1496.8883 Kcal/mole
+ Lattice Lengths           27.200000     27.200000     27.200000
+ Lattice Angles            90.000000     90.000000     90.000000
+ Frame Number                     50
+ Coordinate File            heat.arc
