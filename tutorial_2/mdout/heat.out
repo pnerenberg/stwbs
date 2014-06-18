@@ -1,0 +1,568 @@
+
+          -------------------------------------------------------
+          Amber 14 SANDER                              2014
+          -------------------------------------------------------
+
+| PMEMD implementation of SANDER, Release 14
+
+| Run on 06/07/2014 at 23:04:35
+
+  [-O]verwriting output
+
+File Assignments:
+|   MDIN: mdin/heat.in                                                          
+|  MDOUT: mdout/heat.out                                                        
+| INPCRD: rst/min.rst                                                           
+|   PARM: gag_wat.prmtop                                                        
+| RESTRT: rst/heat.rst                                                          
+|   REFC: refc                                                                  
+|  MDVEL: mdvel                                                                 
+|   MDEN: mden                                                                  
+|  MDCRD: mdcrd/heat.mdcrd                                                      
+| MDINFO: mdinfo                                                                
+|LOGFILE: logfile                                                               
+
+ 
+ Here is the input file:
+ 
+NVT temperature equilibration 5 ps                                             
+ &cntrl                                                                        
+  imin = 0, irest = 0, ntx = 1,                                                
+  ntb = 1, cut = 9.0, iamoeba = 1,                                             
+  ntf = 1, ntc = 1,                                                            
+  ntt = 4, temp0 = 298.15, tautp = 0.1, ig = -1, tempi = 298.15,               
+  nstlim = 5000, dt = 0.001,                                                   
+  ntpr = 100, ntwx = 100, ntwr = 100,                                          
+  ioutfm = 1, iwrap = 1,                                                       
+ /                                                                             
+ &ewald                                                                        
+  ew_coeff = 0.45, order = 5,                                                  
+ /                                                                             
+ &amoeba                                                                       
+  ee_dsum_cut = 7.0, dipole_scf_tol = 0.01, amoeba_verbose = 0,                
+  dipole_scf_iter_max = 50, sor_coefficient = 0.7,                             
+  do_vdw_longrange = 1, do_vdw_taper = 1,                                      
+ /                                                                             
+
+
+ 
+ 
+|  INFO: Old style inpcrd file read
+
+ 
+| Conditional Compilation Defines Used:
+| MPI
+| FFTW_FFT
+| BINTRAJ
+| MKL
+ 
+| Largest sphere to fit in unit cell has radius =    15.067
+
+| New format PARM file being parsed.
+| Version =    1.000 Date = 06/07/14 Time = 19:06:55
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+ getting new box info from bottom of inpcrd
+
+ NATOM  =    1704 NTYPES =       1 NBONH =       0 MBONA  =       0
+ NTHETH =       0 MTHETA =       0 NPHIH =       0 MPHIA  =       0
+ NHPARM =       0 NPARM  =       0 NNB   =    1854 NRES   =     562
+ NBONA  =       0 NTHETA =       0 NPHIA =       0 NUMBND =       0
+ NUMANG =       0 NPTRA  =       0 NATYP =       1 NPHB   =       0
+ IFBOX  =       1 NMXRS  =       0 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+| Coordinate Index Table dimensions:     5    5    5
+| Direct force subcell size =     6.0268    6.1022    6.0445
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+GAG peptide AMOEBA ff                                                           
+
+General flags:
+     imin    =       0, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       1, irest   =       0, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       1, ntpr    =     100, ntrx    =       1, ntwr    =     100
+     iwrap   =       1, ntwx    =     100, ntwv    =       0, ntwe    =       0
+     ioutfm  =       1, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       1, ntb     =       1, igb     =       0, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     cut     =   9.00000
+     scnb    =   2.00000, scee    =   1.20000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Molecular dynamics:
+     nstlim  =      5000, nscm    =      1000, nrespa  =         1
+     t       =   0.00000, dt      =   0.00100, vlimit  =  20.00000
+
+Ewald parameters:
+     verbose =       0, ew_type =       0, nbflag  =       1, use_pme =       1
+     vdwmeth =       1, eedmeth =       1, netfrc  =       1
+     Box X =   30.134   Box Y =   30.511   Box Z =   30.222
+     Alpha =   90.000   Beta  =   90.000   Gamma =   90.000
+     NFFT1 =   32       NFFT2 =   32       NFFT3 =   32
+     Cutoff=    9.000   Tol   =0.113E-08
+     Ewald Coefficient =  0.45000
+     Interpolation order =    5
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+GAG peptide AMOEBA ff                                                           
+ begin time read from input coords =     0.000 ps
+
+| Dynamic Memory, Types Used:
+| Reals              267157
+| Integers            70133
+
+| Nonbonded Pairs Initial Allocation:   32107
+
+| Running AMBER/MPI version on   16 nodes
+
+ 
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+ ---------------------------------------------------
+ APPROXIMATING switch and d/dx switch using CUBIC SPLINE INTERPOLATION
+ using   5000.0 points per unit in tabled values
+ TESTING RELATIVE ERROR over r ranging from 0.0 to cutoff
+| CHECK switch(x): max rel err =   0.2738E-14   at   2.422500
+| CHECK d/dx switch(x): max rel err =   0.8987E-11   at   2.875760
+ ---------------------------------------------------
+| num_pairs_in_ee_cut, size_dipole_dipole_list =       2002      4004
+
+ NSTEP =        0   TIME(PS) =       0.000  TEMP(K) =   297.18  PRESS =     0.0
+ Etot   =     -4535.1672  EKtot   =      1508.5649  EPtot      =     -6043.7321
+ BOND   =        67.8782  ANGLE   =        85.7671  DIHED      =         4.7968
+ 1-4 NB =        17.3873  1-4 EEL =         0.0000  VDWAALS    =      2871.0801
+ EELEC  =     -6419.9652  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2670.6763
+ Dipole convergence: rms =  0.100E-01 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+
+ NSTEP =      100   TIME(PS) =       0.100  TEMP(K) =   156.40  PRESS =     0.0
+ Etot   =     -4952.1346  EKtot   =       793.9309  EPtot      =     -5746.0655
+ BOND   =       236.4808  ANGLE   =       178.4846  DIHED      =        14.4383
+ 1-4 NB =        16.3607  1-4 EEL =         0.0000  VDWAALS    =      3068.6301
+ EELEC  =     -6493.5512  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2766.9088
+ Dipole convergence: rms =  0.583E-02 iters =   5.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+
+ NSTEP =      200   TIME(PS) =       0.200  TEMP(K) =   200.99  PRESS =     0.0
+ Etot   =     -4384.7081  EKtot   =      1020.2573  EPtot      =     -5404.9653
+ BOND   =       237.8810  ANGLE   =       247.5643  DIHED      =        14.9296
+ 1-4 NB =        27.7186  1-4 EEL =         0.0000  VDWAALS    =      2919.6466
+ EELEC  =     -6224.4616  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2628.2439
+ Dipole convergence: rms =  0.574E-02 iters =   5.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+
+ NSTEP =      300   TIME(PS) =       0.300  TEMP(K) =   239.60  PRESS =     0.0
+ Etot   =     -4011.7115  EKtot   =      1216.2998  EPtot      =     -5228.0114
+ BOND   =       242.8685  ANGLE   =       257.5881  DIHED      =         8.6145
+ 1-4 NB =        45.5136  1-4 EEL =         0.0000  VDWAALS    =      2917.3410
+ EELEC  =     -6126.0249  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2573.9121
+ Dipole convergence: rms =  0.573E-02 iters =   5.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+
+ NSTEP =      400   TIME(PS) =       0.400  TEMP(K) =   261.24  PRESS =     0.0
+ Etot   =     -3710.2839  EKtot   =      1326.1428  EPtot      =     -5036.4268
+ BOND   =       333.9704  ANGLE   =       243.7273  DIHED      =        16.7249
+ 1-4 NB =        20.2324  1-4 EEL =         0.0000  VDWAALS    =      2696.6148
+ EELEC  =     -5915.6713  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2432.0252
+ Dipole convergence: rms =  0.942E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+  0.000000000000000E+000
+
+ NSTEP =      500   TIME(PS) =       0.500  TEMP(K) =   277.96  PRESS =     0.0
+ Etot   =     -3540.5033  EKtot   =      1411.0102  EPtot      =     -4951.5135
+ BOND   =       321.6869  ANGLE   =       239.7595  DIHED      =        14.9315
+ 1-4 NB =        31.0504  1-4 EEL =         0.0000  VDWAALS    =      2586.7594
+ EELEC  =     -5800.7988  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2344.9024
+ Dipole convergence: rms =  0.936E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+
+ NSTEP =      600   TIME(PS) =       0.600  TEMP(K) =   283.48  PRESS =     0.0
+ Etot   =     -3375.9050  EKtot   =      1439.0187  EPtot      =     -4814.9237
+ BOND   =       316.7856  ANGLE   =       272.8647  DIHED      =        16.9782
+ 1-4 NB =        30.1642  1-4 EEL =         0.0000  VDWAALS    =      2194.0805
+ EELEC  =     -5487.9209  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2157.8761
+ Dipole convergence: rms =  0.897E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+
+ NSTEP =      700   TIME(PS) =       0.700  TEMP(K) =   271.69  PRESS =     0.0
+ Etot   =     -3273.4534  EKtot   =      1379.1661  EPtot      =     -4652.6195
+ BOND   =       330.4079  ANGLE   =       363.3882  DIHED      =        10.4148
+ 1-4 NB =         9.8478  1-4 EEL =         0.0000  VDWAALS    =      2220.9137
+ EELEC  =     -5422.2531  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2165.3387
+ Dipole convergence: rms =  0.908E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000       0.000000000000000E+000
+  0.000000000000000E+000
+
+ NSTEP =      800   TIME(PS) =       0.800  TEMP(K) =   288.14  PRESS =     0.0
+ Etot   =     -3215.6166  EKtot   =      1462.6562  EPtot      =     -4678.2727
+ BOND   =       337.1179  ANGLE   =       280.8862  DIHED      =        12.8972
+ 1-4 NB =        19.4245  1-4 EEL =         0.0000  VDWAALS    =      2182.5379
+ EELEC  =     -5392.4994  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2118.6370
+ Dipole convergence: rms =  0.863E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+  0.000000000000000E+000
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+  0.000000000000000E+000
+
+ NSTEP =      900   TIME(PS) =       0.900  TEMP(K) =   294.04  PRESS =     0.0
+ Etot   =     -3152.5302  EKtot   =      1492.6060  EPtot      =     -4645.1362
+ BOND   =       220.0493  ANGLE   =       341.0987  DIHED      =        18.9062
+ 1-4 NB =        46.1458  1-4 EEL =         0.0000  VDWAALS    =      2029.5119
+ EELEC  =     -5265.5411  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2035.3070
+ Dipole convergence: rms =  0.860E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+check COM velocity, temp:        0.000001     0.00(Removed)
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1000   TIME(PS) =       1.000  TEMP(K) =   287.41  PRESS =     0.0
+ Etot   =     -3132.5587  EKtot   =      1458.9650  EPtot      =     -4591.5237
+ BOND   =       344.5313  ANGLE   =       262.2116  DIHED      =        10.4264
+ 1-4 NB =        14.9394  1-4 EEL =         0.0000  VDWAALS    =      1984.5856
+ EELEC  =     -5197.0390  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2011.1790
+ Dipole convergence: rms =  0.877E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1100   TIME(PS) =       1.100  TEMP(K) =   301.09  PRESS =     0.0
+ Etot   =     -3141.7143  EKtot   =      1528.4095  EPtot      =     -4670.1239
+ BOND   =       257.1618  ANGLE   =       285.9412  DIHED      =        19.2343
+ 1-4 NB =        24.5565  1-4 EEL =         0.0000  VDWAALS    =      2005.0343
+ EELEC  =     -5215.4418  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2046.6101
+ Dipole convergence: rms =  0.933E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1200   TIME(PS) =       1.200  TEMP(K) =   290.32  PRESS =     0.0
+ Etot   =     -3105.1334  EKtot   =      1473.7247  EPtot      =     -4578.8581
+ BOND   =       271.6037  ANGLE   =       274.2034  DIHED      =        17.7492
+ 1-4 NB =        35.5355  1-4 EEL =         0.0000  VDWAALS    =      2011.1433
+ EELEC  =     -5173.0366  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2016.0565
+ Dipole convergence: rms =  0.865E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1300   TIME(PS) =       1.300  TEMP(K) =   296.66  PRESS =     0.0
+ Etot   =     -3064.7473  EKtot   =      1505.9079  EPtot      =     -4570.6552
+ BOND   =       307.7302  ANGLE   =       240.5656  DIHED      =        16.9414
+ 1-4 NB =        19.3106  1-4 EEL =         0.0000  VDWAALS    =      1982.1971
+ EELEC  =     -5146.4798  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1990.9203
+ Dipole convergence: rms =  0.846E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1400   TIME(PS) =       1.400  TEMP(K) =   301.18  PRESS =     0.0
+ Etot   =     -3054.6017  EKtot   =      1528.8913  EPtot      =     -4583.4930
+ BOND   =       338.8723  ANGLE   =       225.1583  DIHED      =        10.6631
+ 1-4 NB =        25.4529  1-4 EEL =         0.0000  VDWAALS    =      1989.0023
+ EELEC  =     -5182.8794  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1989.7625
+ Dipole convergence: rms =  0.834E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1500   TIME(PS) =       1.500  TEMP(K) =   296.77  PRESS =     0.0
+ Etot   =     -3056.8172  EKtot   =      1506.4679  EPtot      =     -4563.2851
+ BOND   =       322.2937  ANGLE   =       251.8853  DIHED      =        14.7975
+ 1-4 NB =        18.1174  1-4 EEL =         0.0000  VDWAALS    =      1998.5913
+ EELEC  =     -5171.5572  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1997.4131
+ Dipole convergence: rms =  0.844E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1600   TIME(PS) =       1.600  TEMP(K) =   298.35  PRESS =     0.0
+ Etot   =     -3029.7809  EKtot   =      1514.5166  EPtot      =     -4544.2974
+ BOND   =       260.6091  ANGLE   =       268.5071  DIHED      =        22.2423
+ 1-4 NB =        29.4137  1-4 EEL =         0.0000  VDWAALS    =      1945.6481
+ EELEC  =     -5102.8516  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1967.8661
+ Dipole convergence: rms =  0.833E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1700   TIME(PS) =       1.700  TEMP(K) =   295.67  PRESS =     0.0
+ Etot   =     -3042.3355  EKtot   =      1500.8866  EPtot      =     -4543.2222
+ BOND   =       278.4215  ANGLE   =       257.5635  DIHED      =        29.1574
+ 1-4 NB =        12.0366  1-4 EEL =         0.0000  VDWAALS    =      1923.2310
+ EELEC  =     -5074.9589  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1968.6731
+ Dipole convergence: rms =  0.842E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1800   TIME(PS) =       1.800  TEMP(K) =   286.77  PRESS =     0.0
+ Etot   =     -3023.5293  EKtot   =      1455.7162  EPtot      =     -4479.2455
+ BOND   =       278.7950  ANGLE   =       270.4134  DIHED      =        20.0615
+ 1-4 NB =        23.0570  1-4 EEL =         0.0000  VDWAALS    =      1942.5266
+ EELEC  =     -5073.3052  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1940.7939
+ Dipole convergence: rms =  0.810E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     1900   TIME(PS) =       1.900  TEMP(K) =   306.31  PRESS =     0.0
+ Etot   =     -2999.4430  EKtot   =      1554.9215  EPtot      =     -4554.3645
+ BOND   =       241.8867  ANGLE   =       267.7239  DIHED      =         9.7213
+ 1-4 NB =        24.2370  1-4 EEL =         0.0000  VDWAALS    =      1977.3323
+ EELEC  =     -5096.9323  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1978.3333
+ Dipole convergence: rms =  0.841E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+check COM velocity, temp:        0.000002     0.00(Removed)
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2000   TIME(PS) =       2.000  TEMP(K) =   307.86  PRESS =     0.0
+ Etot   =     -2976.7963  EKtot   =      1562.7773  EPtot      =     -4539.5736
+ BOND   =       275.6632  ANGLE   =       211.8695  DIHED      =        19.6028
+ 1-4 NB =        22.6762  1-4 EEL =         0.0000  VDWAALS    =      1876.0542
+ EELEC  =     -5016.8878  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1928.5517
+ Dipole convergence: rms =  0.819E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2100   TIME(PS) =       2.100  TEMP(K) =   306.37  PRESS =     0.0
+ Etot   =     -3003.8832  EKtot   =      1555.2267  EPtot      =     -4559.1099
+ BOND   =       308.6644  ANGLE   =       240.6440  DIHED      =        14.3445
+ 1-4 NB =        17.1556  1-4 EEL =         0.0000  VDWAALS    =      2027.3903
+ EELEC  =     -5156.6782  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -2010.6305
+ Dipole convergence: rms =  0.855E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2200   TIME(PS) =       2.200  TEMP(K) =   303.30  PRESS =     0.0
+ Etot   =     -2958.3012  EKtot   =      1539.6375  EPtot      =     -4497.9387
+ BOND   =       258.8340  ANGLE   =       280.4504  DIHED      =         6.2578
+ 1-4 NB =        14.6628  1-4 EEL =         0.0000  VDWAALS    =      2008.4117
+ EELEC  =     -5097.2981  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1969.2573
+ Dipole convergence: rms =  0.811E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2300   TIME(PS) =       2.300  TEMP(K) =   305.10  PRESS =     0.0
+ Etot   =     -2933.3019  EKtot   =      1548.7647  EPtot      =     -4482.0666
+ BOND   =       285.2983  ANGLE   =       243.0502  DIHED      =         8.7359
+ 1-4 NB =        22.5206  1-4 EEL =         0.0000  VDWAALS    =      1938.8024
+ EELEC  =     -5031.8538  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1948.6203
+ Dipole convergence: rms =  0.819E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2400   TIME(PS) =       2.400  TEMP(K) =   310.19  PRESS =     0.0
+ Etot   =     -2938.1086  EKtot   =      1574.6079  EPtot      =     -4512.7164
+ BOND   =       260.4729  ANGLE   =       237.4299  DIHED      =        10.2215
+ 1-4 NB =        19.4218  1-4 EEL =         0.0000  VDWAALS    =      2026.1734
+ EELEC  =     -5075.9980  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1990.4379
+ Dipole convergence: rms =  0.835E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2500   TIME(PS) =       2.500  TEMP(K) =   288.36  PRESS =     0.0
+ Etot   =     -2988.8078  EKtot   =      1463.7973  EPtot      =     -4452.6051
+ BOND   =       277.1105  ANGLE   =       275.0979  DIHED      =        11.8220
+ 1-4 NB =        17.9464  1-4 EEL =         0.0000  VDWAALS    =      1926.8338
+ EELEC  =     -5016.5545  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1944.8612
+ Dipole convergence: rms =  0.803E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2600   TIME(PS) =       2.600  TEMP(K) =   292.89  PRESS =     0.0
+ Etot   =     -2945.6667  EKtot   =      1486.7815  EPtot      =     -4432.4482
+ BOND   =       316.1653  ANGLE   =       240.5429  DIHED      =         8.2963
+ 1-4 NB =        24.7988  1-4 EEL =         0.0000  VDWAALS    =      1916.9004
+ EELEC  =     -4994.9440  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1944.2078
+ Dipole convergence: rms =  0.831E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2700   TIME(PS) =       2.700  TEMP(K) =   299.51  PRESS =     0.0
+ Etot   =     -2918.8886  EKtot   =      1520.3941  EPtot      =     -4439.2826
+ BOND   =       268.8826  ANGLE   =       262.3649  DIHED      =         8.9687
+ 1-4 NB =        19.4342  1-4 EEL =         0.0000  VDWAALS    =      1873.5640
+ EELEC  =     -4948.3006  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1924.1965
+ Dipole convergence: rms =  0.801E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2800   TIME(PS) =       2.800  TEMP(K) =   295.75  PRESS =     0.0
+ Etot   =     -2882.4574  EKtot   =      1501.2899  EPtot      =     -4383.7473
+ BOND   =       319.7038  ANGLE   =       245.4936  DIHED      =        13.1578
+ 1-4 NB =        13.9405  1-4 EEL =         0.0000  VDWAALS    =      1885.0185
+ EELEC  =     -4932.6187  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1928.4427
+ Dipole convergence: rms =  0.793E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+ wrapping first mol.:   30.1341540000000        30.5110950000000     
+   30.2224290000000     
+
+ NSTEP =     2900   TIME(PS) =       2.900  TEMP(K) =   307.28  PRESS =     0.0
+ Etot   =     -2901.0548  EKtot   =      1559.8528  EPtot      =     -4460.9076
+ BOND   =       315.3940  ANGLE   =       224.9365  DIHED      =        14.0854
+ 1-4 NB =        17.5091  1-4 EEL =         0.0000  VDWAALS    =      1890.3822
+ EELEC  =     -4990.4240  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ EPOLZ  =     -1932.7909
+ Dipole convergence: rms =  0.800E-02 iters =   4.00
+ ------------------------------------------------------------------------------
+
+ Too many dipole_dipole interactions for allocated

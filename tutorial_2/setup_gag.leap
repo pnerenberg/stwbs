@@ -1,0 +1,6 @@
+source leaprc.ff14SB
+gag = sequence { NGLY ALA CGLY }
+solvatebox gag TIP3PBOX 6.5 iso
+saveamberparm gag amberfc.prmtop amberfc.inpcrd
+savepdb gag gag_wat.pdb
+quit

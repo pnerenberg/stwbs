@@ -1,0 +1,440 @@
+
+          -------------------------------------------------------
+          Amber 14 SANDER                              2014
+          -------------------------------------------------------
+
+| PMEMD implementation of SANDER, Release 14
+
+| Run on 06/07/2014 at 22:45:01
+
+  [-O]verwriting output
+
+File Assignments:
+|   MDIN: mdin/min.in                                                           
+|  MDOUT: mdout/min.out                                                         
+| INPCRD: gag_wat.inpcrd                                                        
+|   PARM: gag_wat.prmtop                                                        
+| RESTRT: rst/min.rst                                                           
+|   REFC: refc                                                                  
+|  MDVEL: mdvel                                                                 
+|   MDEN: mden                                                                  
+|  MDCRD: mdcrd                                                                 
+| MDINFO: mdinfo                                                                
+|LOGFILE: logfile                                                               
+
+ 
+ Here is the input file:
+ 
+Minimization 1000 steps                                                        
+ &cntrl                                                                        
+  imin = 1, irest = 0, ntx = 1,                                                
+  ntb = 1, cut = 9.0, iamoeba = 1,                                             
+  ntf = 1, ntc = 1,                                                            
+  maxcyc = 1000, ncyc = 500,                                                   
+  ntpr = 50, ntwr = 500,                                                       
+ /                                                                             
+ &ewald                                                                        
+  ew_coeff = 0.45, order = 5,                                                  
+ /                                                                             
+ &amoeba                                                                       
+  ee_dsum_cut = 7.0, dipole_scf_tol = 0.01, amoeba_verbose = 0,                
+  dipole_scf_iter_max = 50, sor_coefficient = 0.7,                             
+  do_vdw_longrange = 1, do_vdw_taper = 1,                                      
+ /                                                                             
+
+
+ 
+ 
+| New format inpcrd file being parsed.
+| Version =    1.000 Date = 06/07/14 Time = 19:06:55
+ 
+| Conditional Compilation Defines Used:
+| MPI
+| FFTW_FFT
+| BINTRAJ
+| MKL
+ 
+| Largest sphere to fit in unit cell has radius =    15.067
+
+| New format PARM file being parsed.
+| Version =    1.000 Date = 06/07/14 Time = 19:06:55
+--------------------------------------------------------------------------------
+   1.  RESOURCE   USE: 
+--------------------------------------------------------------------------------
+
+ getting new box info from bottom of inpcrd
+
+ NATOM  =    1704 NTYPES =       1 NBONH =       0 MBONA  =       0
+ NTHETH =       0 MTHETA =       0 NPHIH =       0 MPHIA  =       0
+ NHPARM =       0 NPARM  =       0 NNB   =    1854 NRES   =     562
+ NBONA  =       0 NTHETA =       0 NPHIA =       0 NUMBND =       0
+ NUMANG =       0 NPTRA  =       0 NATYP =       1 NPHB   =       0
+ IFBOX  =       1 NMXRS  =       0 IFCAP =       0 NEXTRA =       0
+ NCOPY  =       0
+
+| Coordinate Index Table dimensions:     5    5    5
+| Direct force subcell size =     6.0268    6.1022    6.0445
+
+     BOX TYPE: RECTILINEAR
+
+--------------------------------------------------------------------------------
+   2.  CONTROL  DATA  FOR  THE  RUN
+--------------------------------------------------------------------------------
+
+GAG peptide AMOEBA ff                                                           
+
+General flags:
+     imin    =       1, nmropt  =       0
+
+Nature and format of input:
+     ntx     =       1, irest   =       0, ntrx    =       1
+
+Nature and format of output:
+     ntxo    =       1, ntpr    =      50, ntrx    =       1, ntwr    =     500
+     iwrap   =       0, ntwx    =       0, ntwv    =       0, ntwe    =       0
+     ioutfm  =       0, ntwprt  =       0, idecomp =       0, rbornstat=      0
+
+Potential function:
+     ntf     =       1, ntb     =       1, igb     =       0, nsnb    =      25
+     ipol    =       0, gbsa    =       0, iesp    =       0
+     cut     =   9.00000
+     scnb    =   2.00000, scee    =   1.20000
+
+Frozen or restrained atoms:
+     ibelly  =       0, ntr     =       0
+
+Energy minimization:
+     maxcyc  =    1000, ncyc    =     500, ntmin   =       1
+     dx0     =   0.01000, drms    =   0.00010
+
+Ewald parameters:
+     verbose =       0, ew_type =       0, nbflag  =       1, use_pme =       1
+     vdwmeth =       1, eedmeth =       1, netfrc  =       0
+     Box X =   30.134   Box Y =   30.511   Box Z =   30.222
+     Alpha =   90.000   Beta  =   90.000   Gamma =   90.000
+     NFFT1 =   32       NFFT2 =   32       NFFT3 =   32
+     Cutoff=    9.000   Tol   =0.113E-08
+     Ewald Coefficient =  0.45000
+     Interpolation order =    5
+
+--------------------------------------------------------------------------------
+   3.  ATOMIC COORDINATES AND VELOCITIES
+--------------------------------------------------------------------------------
+
+GAG peptide AMOEBA ff                                                           
+ begin time read from input coords =     0.000 ps
+
+| Dynamic Memory, Types Used:
+| Reals              262045
+| Integers            69573
+
+| Nonbonded Pairs Initial Allocation:   32107
+
+| Running AMBER/MPI version on   16 nodes
+
+ 
+--------------------------------------------------------------------------------
+   4.  RESULTS
+--------------------------------------------------------------------------------
+
+ ---------------------------------------------------
+ APPROXIMATING switch and d/dx switch using CUBIC SPLINE INTERPOLATION
+ using   5000.0 points per unit in tabled values
+ TESTING RELATIVE ERROR over r ranging from 0.0 to cutoff
+| CHECK switch(x): max rel err =   0.2738E-14   at   2.422500
+| CHECK d/dx switch(x): max rel err =   0.8987E-11   at   2.875760
+ ---------------------------------------------------
+| num_pairs_in_ee_cut, size_dipole_dipole_list =       2144      4288
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+      1      -3.8112E+03     6.3322E+00     4.7882E+01     O          23
+
+ BOND    =        3.2828  ANGLE   =      146.8542  DIHED      =        6.3452
+ VDWAALS =     1821.8028  EEL     =    -4238.8636  HBOND      =        0.0000
+ 1-4 VDW =       25.7781  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -1576.4117
+ Dipole convergence: rms =  0.680E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+     50      -4.7270E+03     4.2498E+00     2.1209E+02     C          22
+
+ BOND    =       50.6722  ANGLE   =       66.9827  DIHED      =        6.3330
+ VDWAALS =     1749.4165  EEL     =    -4818.1122  HBOND      =        0.0000
+ 1-4 VDW =       28.8675  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -1811.1313
+ Dipole convergence: rms =  0.764E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    100      -4.9362E+03     2.8963E+00     1.2834E+02     C          22
+
+ BOND    =       49.5472  ANGLE   =       66.3989  DIHED      =        6.3299
+ VDWAALS =     1803.1815  EEL     =    -4996.8260  HBOND      =        0.0000
+ 1-4 VDW =       27.6571  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -1892.5319
+ Dipole convergence: rms =  0.795E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    150      -5.0570E+03     1.4271E+00     5.1807E+01     C          22
+
+ BOND    =       49.8213  ANGLE   =       66.1384  DIHED      =        6.3216
+ VDWAALS =     1858.9015  EEL     =    -5116.6491  HBOND      =        0.0000
+ 1-4 VDW =       26.1538  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -1947.6503
+ Dipole convergence: rms =  0.816E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    200      -5.1378E+03     2.5037E+00     1.0320E+02     C          22
+
+ BOND    =       54.6534  ANGLE   =       66.4573  DIHED      =        6.2976
+ VDWAALS =     1910.8402  EEL     =    -5209.7008  HBOND      =        0.0000
+ 1-4 VDW =       24.9681  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -1991.3027
+ Dipole convergence: rms =  0.832E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    250      -5.2066E+03     8.6460E-01     3.1504E+01     C          22
+
+ BOND    =       51.6082  ANGLE   =       66.3235  DIHED      =        6.2196
+ VDWAALS =     1957.2842  EEL     =    -5284.6333  HBOND      =        0.0000
+ 1-4 VDW =       24.2710  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2027.6569
+ Dipole convergence: rms =  0.844E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    300      -5.2609E+03     2.0759E+00     8.3308E+01     C          22
+
+ BOND    =       54.3106  ANGLE   =       66.8486  DIHED      =        6.0413
+ VDWAALS =     2000.9301  EEL     =    -5351.2754  HBOND      =        0.0000
+ 1-4 VDW =       23.4169  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2061.2188
+ Dipole convergence: rms =  0.854E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    350      -5.3118E+03     6.4021E-01     1.6498E+01     C          22
+
+ BOND    =       53.8627  ANGLE   =       67.4581  DIHED      =        5.7788
+ VDWAALS =     2040.8687  EEL     =    -5410.3519  HBOND      =        0.0000
+ 1-4 VDW =       22.2272  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2091.6323
+ Dipole convergence: rms =  0.863E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    400      -5.3589E+03     1.4706E+00     5.8925E+01     C          12
+
+ BOND    =       55.8941  ANGLE   =       68.9526  DIHED      =        5.4490
+ VDWAALS =     2083.0227  EEL     =    -5470.3973  HBOND      =        0.0000
+ 1-4 VDW =       21.2210  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2123.0217
+ Dipole convergence: rms =  0.871E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    450      -5.4045E+03     6.5122E-01     1.9478E+01     C          12
+
+ BOND    =       55.5120  ANGLE   =       68.7072  DIHED      =        5.1593
+ VDWAALS =     2122.5937  EEL     =    -5524.7269  HBOND      =        0.0000
+ 1-4 VDW =       20.8460  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2152.6381
+ Dipole convergence: rms =  0.879E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    500      -5.4454E+03     1.2396E+00     4.1381E+01     N          20
+
+ BOND    =       57.2479  ANGLE   =       69.2549  DIHED      =        4.9481
+ VDWAALS =     2161.3069  EEL     =    -5576.8901  HBOND      =        0.0000
+ 1-4 VDW =       20.4466  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2181.7642
+ Dipole convergence: rms =  0.887E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    550      -5.6790E+03     1.6650E+00     4.3671E+01     C          22
+
+ BOND    =       61.2780  ANGLE   =       78.3981  DIHED      =        4.5087
+ VDWAALS =     2443.1731  EEL     =    -5912.3074  HBOND      =        0.0000
+ 1-4 VDW =       19.1411  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2373.2053
+ Dipole convergence: rms =  0.938E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    600      -5.7584E+03     9.4098E-01     2.1464E+01     CA         11
+
+ BOND    =       62.2921  ANGLE   =       79.7760  DIHED      =        4.6353
+ VDWAALS =     2523.0660  EEL     =    -6016.0836  HBOND      =        0.0000
+ 1-4 VDW =       18.7093  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2430.8344
+ Dipole convergence: rms =  0.951E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    650      -5.8184E+03     9.4993E-01     1.6108E+01     O          23
+
+ BOND    =       64.5328  ANGLE   =       80.6789  DIHED      =        4.7197
+ VDWAALS =     2585.9496  EEL     =    -6094.8546  HBOND      =        0.0000
+ 1-4 VDW =       18.5172  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2477.9263
+ Dipole convergence: rms =  0.961E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    700      -5.8669E+03     9.1289E-01     1.7651E+01     O          23
+
+ BOND    =       66.0877  ANGLE   =       81.2780  DIHED      =        4.7682
+ VDWAALS =     2653.1286  EEL     =    -6167.6230  HBOND      =        0.0000
+ 1-4 VDW =       18.3859  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2522.9746
+ Dipole convergence: rms =  0.972E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    750      -5.9085E+03     7.9462E-01     2.2152E+01     N          20
+
+ BOND    =       66.0832  ANGLE   =       81.8960  DIHED      =        4.8082
+ VDWAALS =     2703.3509  EEL     =    -6226.2825  HBOND      =        0.0000
+ 1-4 VDW =       18.2542  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2556.6184
+ Dipole convergence: rms =  0.978E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    800      -5.9450E+03     7.1176E-01     1.5947E+01     N          20
+
+ BOND    =       66.3541  ANGLE   =       83.2967  DIHED      =        4.8324
+ VDWAALS =     2744.6368  EEL     =    -6277.0450  HBOND      =        0.0000
+ 1-4 VDW =       18.0034  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2585.0785
+ Dipole convergence: rms =  0.983E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    850      -5.9754E+03     8.3795E-01     2.7344E+01     C           3
+
+ BOND    =       66.7844  ANGLE   =       83.9618  DIHED      =        4.8464
+ VDWAALS =     2782.7273  EEL     =    -6320.7306  HBOND      =        0.0000
+ 1-4 VDW =       17.9622  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2610.9440
+ Dipole convergence: rms =  0.988E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    900      -6.0017E+03     7.0917E-01     1.7748E+01     C           3
+
+ BOND    =       66.8962  ANGLE   =       84.6554  DIHED      =        4.8264
+ VDWAALS =     2816.4055  EEL     =    -6358.4327  HBOND      =        0.0000
+ 1-4 VDW =       17.6405  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2633.6455
+ Dipole convergence: rms =  0.992E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+    950      -6.0235E+03     6.8045E-01     1.1836E+01     N           1
+
+ BOND    =       67.2036  ANGLE   =       85.4334  DIHED      =        4.8080
+ VDWAALS =     2845.0993  EEL     =    -6390.6258  HBOND      =        0.0000
+ 1-4 VDW =       17.5936  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2652.9851
+ Dipole convergence: rms =  0.996E-02 iters =   4.00
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+   1000      -6.0437E+03     7.8678E-01     1.5750E+01     O          23
+
+ BOND    =       67.8782  ANGLE   =       85.7671  DIHED      =        4.7968
+ VDWAALS =     2871.0801  EEL     =    -6419.9652  HBOND      =        0.0000
+ 1-4 VDW =       17.3873  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2670.6763
+ Dipole convergence: rms =  0.100E-01 iters =   4.00
+
+
+  Maximum number of minimization cycles reached.
+
+
+                    FINAL RESULTS
+
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+   1000      -6.0437E+03     7.8678E-01     1.5750E+01     O          23
+
+ BOND    =       67.8782  ANGLE   =       85.7671  DIHED      =        4.7968
+ VDWAALS =     2871.0801  EEL     =    -6419.9652  HBOND      =        0.0000
+ 1-4 VDW =       17.3873  1-4 EEL =        0.0000  RESTRAINT  =        0.0000
+ EPOLAR  =    -2670.6763
+ Dipole convergence: rms =  0.100E-01 iters =   4.00
+--------------------------------------------------------------------------------
+   5.  TIMINGS
+--------------------------------------------------------------------------------
+
+|  NonSetup CPU Time in Major Routines, Average for All Tasks:
+|
+|     Routine           Sec        %
+|     ------------------------------
+|     DataDistrib       1.99   20.90
+|     Nonbond           7.51   78.99
+|     Bond              0.00    0.03
+|     Angle             0.00    0.03
+|     Dihedral          0.00    0.01
+|     Shake             0.00    0.00
+|     Other             0.00    0.04
+|     ------------------------------
+|     Total             9.51
+
+|  Amoeba Nonbond Pairlist CPU Time, Average for All Tasks:
+|
+|     Routine              Sec        %
+|     ---------------------------------
+|     Set Up Cit           0.00    0.02
+|     Build List           0.02    0.19
+|     ---------------------------------
+|     Total                0.02    0.20
+
+|  Amoeba Direct Force CPU Time, Average for All Tasks:
+|
+|     Routine              Sec        %
+|     ---------------------------------
+|     NonBonded Calc       3.99   42.01
+|     Exclude Masked       0.14    1.44
+|     Other                0.92    9.66
+|     ---------------------------------
+|     Total                5.05   53.12
+
+|  Amoeba Reciprocal Force CPU Time, Average for All Tasks:
+|
+|     Routine              Sec        %
+|     ---------------------------------
+|     1D bspline           0.22    2.36
+|     Grid Charges         0.46    4.87
+|     Scalar Sum           0.06    0.62
+|     Gradient Sum         0.68    7.15
+|     FFT                  0.92    9.72
+|     ---------------------------------
+|     Total                2.35   24.72
+
+|  Amoeba Load Balancing CPU Time, Average for All Tasks:
+|
+|     Routine                 Sec        %
+|     ------------------------------------
+|     Atom Reassign           0.00    0.00
+|     Image Reassign          0.00    0.00
+|     FFT Slab Reassign       0.00    0.00
+|     ------------------------------------
+|     Total                   0.00    0.00
+
+|  Master Setup CPU time:            0.46 seconds
+|  Master NonSetup CPU time:         9.50 seconds
+|  Master Total CPU time:            9.96 seconds     0.00 hours
+
+|  Master Setup wall time:           1    seconds
+|  Master NonSetup wall time:        9    seconds
+|  Master Total wall time:          10    seconds     0.00 hours
